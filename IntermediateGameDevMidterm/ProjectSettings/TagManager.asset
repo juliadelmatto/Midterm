@@ -6,6 +6,7 @@ TagManager:
   tags:
   - player
   - square
+  - eraser
   layers:
   - Default
   - TransparentFX

@@ -50,6 +50,10 @@ public class changecolor : MonoBehaviour {
 			GetComponent<MeshRenderer> ().material.color = new Color32 (63, 191, 191, 1);
 			Debug.Log ("blue");
 		}
+
+		if (other.gameObject.tag == "eraser") {
+			GetComponent<MeshRenderer> ().material.color = new Color32 (255, 255, 255, 255);
+		}
 	}
 	void OnTriggerExit(Collider other){
 		if (other.gameObject.tag == "player") {
