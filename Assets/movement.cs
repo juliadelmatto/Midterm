@@ -26,6 +26,8 @@ public class movement : MonoBehaviour {
 			transform.Translate(5, 0, 0);
 		}
 
+
+			
 		//var x = Input.GetAxis("Horizontal") * Time.deltaTime * 170.0f;
 		//var z = Input.GetAxis("Vertical") * Time.deltaTime * 10.0f;
 

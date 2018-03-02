@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "IntermediateGameDevMidterm",
+"dataUrl": "week5build.data.unityweb",
+"asmCodeUrl": "week5build.asm.code.unityweb",
+"asmMemoryUrl": "week5build.asm.memory.unityweb",
+"asmFrameworkUrl": "week5build.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

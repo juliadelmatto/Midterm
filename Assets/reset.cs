@@ -11,12 +11,19 @@ public class reset : MonoBehaviour {
 	public GameObject box1;
 	public GameObject box2;
 
+	public bool start;
+	public bool second;
+	public bool third;
+
 	public Camera cam1;
 	public Camera cam2;
 	public Camera cam3;
 
 	// Use this for initialization
 	void Start () {
+		start = true;
+		second = false;
+		third = false;
 
 		cam1.gameObject.SetActive(true);
 		cam2.gameObject.SetActive(false);
@@ -39,7 +46,15 @@ public class reset : MonoBehaviour {
 //			transform.position = new Vector3 (3.5f, 6.87f, 125f);
 //		}
 
-		
+		if ((GetComponent<Rigidbody> ().position.y < 5) && (start == true)){
+			transform.position = new Vector3 (1.28f, 7.05f, -65.61f);
+		}
+		if ((GetComponent<Rigidbody> ().position.y < 5) && (second == true)){
+			transform.position = new Vector3 (3.96f, 7.057f, -16.36f);
+		}
+		if ((GetComponent<Rigidbody> ().position.y < 5) && (third == true)){
+			transform.position = new Vector3 (8.9f, 7.05f, 44f);
+		}
 	}
 
 	void OnTriggerEnter(Collider col){
@@ -48,6 +63,8 @@ public class reset : MonoBehaviour {
 			transform.position = new Vector3 (3.96f, 7.057f, -16.36f);
 			cam1.gameObject.SetActive(false);
 			cam2.gameObject.SetActive(true);
+			start = false;
+			second = true;
 //			first = false;
 //			second = true;
 //
@@ -56,6 +73,8 @@ public class reset : MonoBehaviour {
 			transform.position = new Vector3 (8.9f, 7.05f, 44f);
 			cam2.gameObject.SetActive(false);
 			cam3.gameObject.SetActive(true);
+			second = false;
+			third = true;
 //			first = false;
 //			second = true;
 
