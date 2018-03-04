@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "IntermediateGameDevMidterm",
+"dataUrl": "try.data.unityweb",
+"asmCodeUrl": "try.asm.code.unityweb",
+"asmMemoryUrl": "try.asm.memory.unityweb",
+"asmFrameworkUrl": "try.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
