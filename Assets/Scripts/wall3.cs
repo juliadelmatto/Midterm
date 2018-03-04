@@ -8,7 +8,7 @@ public class wall3 : MonoBehaviour {
 //	public GameObject platform222;
 //	public GameObject platform333;
 //	public GameObject platform444;
-
+	public GameObject arrow;
 
 	public GameObject platform1;
 	public GameObject platform2;
@@ -96,7 +96,7 @@ public class wall3 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		arrow.gameObject.SetActive (false);
 	}
 
 	// Update is called once per frame
@@ -109,6 +109,7 @@ public class wall3 : MonoBehaviour {
 //		}
 		if ((platform1.GetComponent<c3> ().check == true) && (platform2.GetComponent<c3> ().check == true) && (platform3.GetComponent<c3> ().check == true) && (platform4.GetComponent<c3> ().check == true) && (platform5.GetComponent<c3> ().check == true) && (platform6.GetComponent<c3> ().check == true) && (platform7.GetComponent<c3> ().check == true) && (platform8.GetComponent<c3> ().check == true) && (platform9.GetComponent<c3> ().check == true) && (platform10.GetComponent<c3> ().check == true) && (platform11.GetComponent<c3> ().check == true) && (platform12.GetComponent<c3> ().check == true) && (platform13.GetComponent<c3> ().check == true) && (platform14.GetComponent<c3> ().check == true) && (platform15.GetComponent<c3> ().check == true) && (platform16.GetComponent<c3> ().check == true) && (platform17.GetComponent<c3> ().check == true) && (platform18.GetComponent<c3> ().check == true) && (platform19.GetComponent<c3> ().check == true) && (platform20.GetComponent<squarereset> ().check == true) && (platform21.GetComponent<c3> ().check == true) && (platform22.GetComponent<c3> ().check == true) && (platform222.GetComponent<c3> ().check == true) && (platform23.GetComponent<c3> ().check == true) && (platform24.GetComponent<c3> ().check == true) && (platform25.GetComponent<c3> ().check == true) && (platform26.GetComponent<c3> ().check == true) && (platform27.GetComponent<c3> ().check == true) && (platform28.GetComponent<c3> ().check == true) && (platform29.GetComponent<c3> ().check == true) && (platform30.GetComponent<c3> ().check == true) && (platform31.GetComponent<c3> ().check == true) && (platform32.GetComponent<c3> ().check == true) && (platform33.GetComponent<c3> ().check == true) && (platform34.GetComponent<c3> ().check == true) && (platform35.GetComponent<c3> ().check == true) && (platform36.GetComponent<c3> ().check == true) && (platform37.GetComponent<c3> ().check == true) && (platform38.GetComponent<squarereset> ().check == true) && (platform39.GetComponent<c3> ().check == true) && (platform40.GetComponent<c3> ().check == true) && (platform41.GetComponent<c3> ().check == true) && (platform42.GetComponent<c3> ().check == true) && (platform43.GetComponent<c3> ().check == true) && (platform44.GetComponent<c3> ().check == true) && (platform45.GetComponent<c3> ().check == true) && (platform46.GetComponent<c3> ().check == true) && (platform47.GetComponent<c3> ().check == true) && (platform48.GetComponent<c3> ().check == true) && (platform49.GetComponent<c3> ().check == true) && (platform50.GetComponent<c3> ().check == true) && (platform51.GetComponent<c3> ().check == true) && (platform52.GetComponent<c3> ().check == true) && (platform53.GetComponent<c3> ().check == true) && (platform54.GetComponent<c3> ().check == true) && (platform56.GetComponent<c3> ().check == true) && (platform57.GetComponent<c3> ().check == true) && (platform58.GetComponent<squarereset> ().check == true) && (platform59.GetComponent<c3> ().check == true) && (platform60.GetComponent<c3> ().check == true) && (platform61.GetComponent<c3> ().check == true) && (platform62.GetComponent<c3> ().check == true) && (platform63.GetComponent<c3> ().check == true) && (platform64.GetComponent<c3> ().check == true) && (platform65.GetComponent<c3> ().check == true) && (platform66.GetComponent<c3> ().check == true) && (platform67.GetComponent<c3> ().check == true) && (platform68.GetComponent<c3> ().check == true) && (platform69.GetComponent<c3> ().check == true) && (platform70.GetComponent<c3> ().check == true) && (platform71.GetComponent<c3> ().check == true) && (platform72.GetComponent<c3> ().check == true) && (platform73.GetComponent<c3> ().check == true) && (platform74.GetComponent<c3> ().check == true) && (platform75.GetComponent<c3> ().check == true) && (platform76.GetComponent<c3> ().check == true) && (platform77.GetComponent<c3> ().check == true)) {
 			this.gameObject.SetActive (false);
+			arrow.gameObject.SetActive (true);
 		}
 		
 		

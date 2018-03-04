@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class wall : MonoBehaviour {
 
+	public GameObject arrow;
+
 	public GameObject platform1;
 	public GameObject platform2;
 
@@ -91,7 +93,7 @@ public class wall : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		arrow.gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -101,6 +103,7 @@ public class wall : MonoBehaviour {
 
 		if ((platform1.GetComponent<changecolor> ().check == true)&&(platform2.GetComponent<changecolor> ().check == true)&&(platform3.GetComponent<changecolor> ().check == true)&&(platform4.GetComponent<changecolor> ().check == true)&&(platform5.GetComponent<changecolor> ().check == true)&&(platform6.GetComponent<changecolor> ().check == true)&&(platform7.GetComponent<changecolor> ().check == true)&&(platform8.GetComponent<changecolor> ().check == true)&&(platform9.GetComponent<changecolor> ().check == true)&&(platform10.GetComponent<changecolor> ().check == true)&&(platform11.GetComponent<changecolor> ().check == true)&&(platform12.GetComponent<changecolor> ().check == true)&&(platform13.GetComponent<changecolor> ().check == true)&&(platform14.GetComponent<changecolor> ().check == true)&&(platform15.GetComponent<changecolor> ().check == true)&&(platform16.GetComponent<changecolor> ().check == true)&&(platform17.GetComponent<changecolor> ().check == true)&&(platform18.GetComponent<changecolor> ().check == true)&&(platform19.GetComponent<changecolor> ().check == true)&&(platform20.GetComponent<squarereset> ().check == true)&&(platform21.GetComponent<changecolor> ().check == true)&&(platform22.GetComponent<changecolor> ().check == true)&&(platform222.GetComponent<changecolor> ().check == true)&&(platform23.GetComponent<changecolor> ().check == true)&&(platform24.GetComponent<changecolor> ().check == true)&&(platform25.GetComponent<changecolor> ().check == true)&&(platform26.GetComponent<changecolor> ().check == true)&&(platform27.GetComponent<changecolor> ().check == true)&&(platform28.GetComponent<changecolor> ().check == true)&&(platform29.GetComponent<changecolor> ().check == true)&&(platform30.GetComponent<changecolor> ().check == true)&&(platform31.GetComponent<changecolor> ().check == true)&&(platform32.GetComponent<changecolor> ().check == true)&&(platform33.GetComponent<changecolor> ().check == true)&&(platform34.GetComponent<changecolor> ().check == true)&&(platform35.GetComponent<changecolor> ().check == true)&&(platform36.GetComponent<changecolor> ().check == true)&&(platform37.GetComponent<changecolor> ().check == true)&&(platform38.GetComponent<changecolor> ().check == true)&&(platform39.GetComponent<changecolor> ().check == true)&&(platform40.GetComponent<changecolor> ().check == true)&&(platform41.GetComponent<changecolor> ().check == true)&&(platform42.GetComponent<changecolor> ().check == true)&&(platform43.GetComponent<changecolor> ().check == true)&&(platform44.GetComponent<changecolor> ().check == true)&&(platform45.GetComponent<changecolor> ().check == true)&&(platform46.GetComponent<changecolor> ().check == true)&&(platform47.GetComponent<changecolor> ().check == true)&&(platform48.GetComponent<changecolor> ().check == true)&&(platform49.GetComponent<changecolor> ().check == true)&&(platform50.GetComponent<changecolor> ().check == true)&&(platform51.GetComponent<changecolor> ().check == true)&&(platform52.GetComponent<changecolor> ().check == true)&&(platform53.GetComponent<changecolor> ().check == true)&&(platform54.GetComponent<changecolor> ().check == true)&&(platform56.GetComponent<changecolor> ().check == true)&&(platform57.GetComponent<changecolor> ().check == true)&&(platform58.GetComponent<changecolor> ().check == true)&&(platform59.GetComponent<changecolor> ().check == true)&&(platform60.GetComponent<changecolor> ().check == true)&&(platform61.GetComponent<changecolor> ().check == true)&&(platform62.GetComponent<changecolor> ().check == true)&&(platform63.GetComponent<changecolor> ().check == true)&&(platform64.GetComponent<changecolor> ().check == true)&&(platform65.GetComponent<changecolor> ().check == true)&&(platform66.GetComponent<changecolor> ().check == true)&&(platform67.GetComponent<changecolor> ().check == true)&&(platform68.GetComponent<changecolor> ().check == true)&&(platform69.GetComponent<changecolor> ().check == true)&&(platform70.GetComponent<changecolor> ().check == true)&&(platform71.GetComponent<changecolor> ().check == true)&&(platform72.GetComponent<changecolor> ().check == true)&&(platform73.GetComponent<changecolor> ().check == true)&&(platform74.GetComponent<changecolor> ().check == true)&&(platform75.GetComponent<changecolor> ().check == true)&&(platform76.GetComponent<changecolor> ().check == true)&&(platform77.GetComponent<changecolor> ().check == true)) {
 			this.gameObject.SetActive(false);
+			arrow.gameObject.SetActive (true);
 		}
 			
 	}

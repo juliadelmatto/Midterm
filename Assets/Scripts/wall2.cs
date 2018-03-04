@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class wall2 : MonoBehaviour {
 
+	public GameObject arrow;
+
 	public GameObject platform1;
 	public GameObject platform2;
 	public GameObject platform3;
@@ -15,7 +17,7 @@ public class wall2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		arrow.gameObject.SetActive (false);
 	}
 
 	// Update is called once per frame
@@ -25,6 +27,7 @@ public class wall2 : MonoBehaviour {
 
 		if ((platform1.GetComponent<c2> ().check == true)&&(platform2.GetComponent<c2> ().check == true)&&(platform3.GetComponent<c2> ().check == true)&&(platform4.GetComponent<c2> ().check == true)&&(platform5.GetComponent<c2> ().check == true)&&(platform6.GetComponent<c2> ().check == true)&&(platform7.GetComponent<squarereset> ().check == true)&&(platform8.GetComponent<squarereset> ().check == true)) {
 			this.gameObject.SetActive(false);
+			arrow.gameObject.SetActive (true);
 		}
 
 	}
