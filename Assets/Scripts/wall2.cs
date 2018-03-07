@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class wall2 : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class wall2 : MonoBehaviour {
 	public GameObject platform6;
 	public GameObject platform7;
 	public GameObject platform8;
+	public Text t;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +30,8 @@ public class wall2 : MonoBehaviour {
 		if ((platform1.GetComponent<c2> ().check == true)&&(platform2.GetComponent<c2> ().check == true)&&(platform3.GetComponent<c2> ().check == true)&&(platform4.GetComponent<c2> ().check == true)&&(platform5.GetComponent<c2> ().check == true)&&(platform6.GetComponent<c2> ().check == true)&&(platform7.GetComponent<squarereset> ().check == true)&&(platform8.GetComponent<squarereset> ().check == true)) {
 			this.gameObject.SetActive(false);
 			arrow.gameObject.SetActive (true);
+			t.GetComponent<Text> ().enabled = false;
+
 		}
 
 	}
